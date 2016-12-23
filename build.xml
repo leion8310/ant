@@ -910,7 +910,7 @@
       <include name="*.pl"/>
     </fixcrlf>
 
-    <chmod dir="${dist}" perm="ugo+rx" includes="**/*.*"/>
+    <chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/>
     <chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/>
 
 
