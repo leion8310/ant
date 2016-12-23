@@ -910,20 +910,10 @@
       <include name="*.pl"/>
     </fixcrlf>
 
-    <setpermissions mode="755" failonerror="${setpermissions.fail}">
-      <dirset dir="${dist.dir}"/>
-    </setpermissions>
-    <setpermissions mode="644" failonerror="${setpermissions.fail}">
-      <fileset dir="${dist.dir}"/>
-    </setpermissions>
-    <setpermissions mode="755" failonerror="${setpermissions.fail}">
-      <fileset dir="${dist.bin}">
-        <include name="**/ant"/>
-        <include name="**/antRun"/>
-        <include name="**/*.pl"/>
-        <include name="**/*.py"/>
-      </fileset>
-    </setpermissions>
+    <chmod dir="${dist}" perm="ugo+rx" includes="**/*.*"/>
+
+    <chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/>
+
 
   </target>
 
