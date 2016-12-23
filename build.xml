@@ -910,8 +910,8 @@
       <include name="*.pl"/>
     </fixcrlf>
 
-    <chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/>
-    <chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/>
+    <!--chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/-->
+    <!--chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/-->
 
 
   </target>
@@ -1014,8 +1014,8 @@
     </copy>
 
 
-    <chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/>
-    <chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/>
+    <!--chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/-->
+    <!--chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/-->
 
     <!-- publish some useful stylesheets -->
     <copy todir="${dist.etc}">
@@ -1123,8 +1123,8 @@
     </fixcrlf>
 
 
-    <chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/>
-    <chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/>
+    <!--chmod dir="${dist.dir}" perm="ugo+rx" includes="**/*.*"/-->
+    <!--chmod dir="${dist.bin}" perm="ugo+rx" includes="**/*.*"/-->
 
   </target>
 
